@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+%html(lang="en")
+  %head
+    %meta(charset="utf-8")
+    %title= @title
+    %link(rel="stylesheet" type="text/css" href="#{path_to("css/master.css")}")
+    = haml :analytics, layout: false
+    = haml :fonts, layout: false
+    = haml :default_head, layout: false
+  %body
+    .container
+      = yield
+    = haml :footer_scripts, layout: false

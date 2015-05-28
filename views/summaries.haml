@@ -1,0 +1,5 @@
+- unless pages.empty?
+  - pages.each do |page|
+    %section.technical-docs(id="#{link_text_to_inline_anchor(page.link_text)}")
+      %h2= page.link_text
+      ~ page.body(self)
