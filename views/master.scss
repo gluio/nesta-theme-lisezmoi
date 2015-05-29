@@ -433,6 +433,7 @@ $code-background: #fcfcfc;
   td.linenos {
     padding: 1em 0.5em;
     border-right: 1px solid darken($code-background, 10%);
+    width: 50px;
   }
   td.code {
     padding: 1em 0.5em;
