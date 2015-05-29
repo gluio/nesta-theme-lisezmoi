@@ -427,13 +427,14 @@ section.technical-docs {
  }
 .hlltable {
   border-collapse: collapse;
-  border: 1px solid darken(#f7f7f7, 10%);
+  width: 100%;
   td.linenos {
     padding: 1em 0.5em;
-    border-right: 1px solid darken(#f7f7f7, 10%);
+    border: 1px solid darken(#f7f7f7, 10%);
   }
   td.code {
     padding: 1em 0.5em;
+    border: 1px solid darken(#f7f7f7, 10%);
   }
   .hll {
     border-radius: 0;
