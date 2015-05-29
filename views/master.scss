@@ -513,4 +513,11 @@ $code-background: #fcfcfc;
   user-select: none;
   color: darken($code-background, 20%);
   text-align: right;
+  a {
+    color: darken($code-background, 20%);
+    text-decoration: none;
+  }
+}
+.linenos a:hover, .code pre > span {
+  background: #f7f7c6;
 }
