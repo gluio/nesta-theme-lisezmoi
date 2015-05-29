@@ -427,15 +427,15 @@ $code-background: #fcfcfc;
   }
  }
 .hlltable {
-  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid darken($code-background, 10%);
   width: 100%;
   td.linenos {
     padding: 1em 0.5em;
-    border: 1px solid darken($code-background, 10%);
+    border-right: 1px solid darken($code-background, 10%);
   }
   td.code {
     padding: 1em 0.5em;
-    border: 1px solid darken($code-background, 10%);
   }
   .hll {
     border-radius: 0;
