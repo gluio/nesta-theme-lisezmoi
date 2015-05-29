@@ -9,9 +9,9 @@ module Nesta
         end
       else
         html_classes = []
-        html_classes << current_item?(item) ? current_menu_item_class : nil
+        html_classes << current_menu_item_class if current_item?(item)
         html_classes << "menu-#{link_text_to_inline_anchor(item.link_text)}"
-        haml_tag :li, class: html_classes.compact.join(" ") do
+        haml_tag :li, class: html_classes.join(" ") do
           haml_tag :a, :<, href: inline_anchored_path(item) do
             haml_concat link_text(item)
           end
