@@ -393,6 +393,9 @@ section.technical-docs {
   margin: 1em;
   color: $color;
   background: lighten($color, 60%);
+  p {
+    margin: 0;
+  }
   a {
     color: $color;
     text-decoration: underline;
