@@ -521,3 +521,7 @@ $code-background: #fcfcfc;
 .linenos a:hover, .code pre > span:hover {
   background: #f7f7c6;
 }
+
+.linenos a:nth-child(1):hover ~ .code pre span:nth-child(1) {
+  background: #f7f7c6;
+}
