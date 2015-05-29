@@ -418,7 +418,11 @@ section.technical-docs {
   background-color: #f7f7f7;
   border-radius: 3px;
   font-family: $code-font-family;
+  font-size: 12px;
   padding: 1em;
+  pre {
+    padding: 0;
+  }
  }
 .hlltable {
   .hll {
@@ -493,4 +497,5 @@ section.technical-docs {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  color: darken(#f7f7f7, 10%);
 }
