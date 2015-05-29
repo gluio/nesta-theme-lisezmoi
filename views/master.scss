@@ -431,12 +431,16 @@ $code-background: #fcfcfc;
   border: 1px solid darken($code-background, 10%);
   width: 100%;
   td.linenos {
-    padding: 1em 0.5em;
+    padding: 0;
     border-right: 1px solid darken($code-background, 10%);
     width: 50px;
   }
   td.code {
-    padding: 1em 0.5em;
+    padding: 0;
+    & > pre span {
+      display: inline-block;
+      width: 100%;
+    }
   }
   .hll {
     border-radius: 0;
@@ -516,5 +520,7 @@ $code-background: #fcfcfc;
   a {
     color: darken($code-background, 20%);
     text-decoration: none;
+    width: 100%;
+    display: inline-block;
   }
 }
