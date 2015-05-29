@@ -419,15 +419,26 @@ section.technical-docs {
   border-radius: 3px;
   font-family: $code-font-family;
   font-size: 12px;
-  padding: 1em;
+  line-height: 16px;
   pre {
     padding: 0;
+    margin: 0;
   }
  }
 .hlltable {
+  border-collapse: collapse;
+  border: 1px solid darken(#f7f7f7, 10%);
+  td.linenos {
+    padding: 1em 0.5em;
+    border-right: 1px solid darken(#f7f7f7, 10%);
+  }
+  td.code {
+    padding: 1em 0.5em;
+  }
   .hll {
     border-radius: 0;
     padding: 0;
+    margin: 0;
   }
 }
 .c { color: #999988; font-style: italic } /* Comment */
@@ -497,5 +508,6 @@ section.technical-docs {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color: darken(#f7f7f7, 10%);
+  color: darken(#f7f7f7, 20%);
+  text-align: right;
 }
