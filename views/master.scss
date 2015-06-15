@@ -191,6 +191,12 @@ mark, blockquote {
     max-width: 100%;
   }
 
+  p {
+    img {
+      vertical-align: middle;
+    }
+  }
+
   section.articles {
     header {
       img.intro {
