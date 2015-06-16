@@ -441,6 +441,9 @@ $code-background: #fcfcfc;
   border-spacing: 0;
   border: 1px solid darken($code-background, 10%);
   width: 100%;
+  overflow-x: auto;
+  display: block;
+
   td.linenos {
     padding: 0;
     border-right: 1px solid darken($code-background, 10%);
@@ -461,6 +464,7 @@ $code-background: #fcfcfc;
   }
   td.code {
     padding: 0;
+    width: 100%;
     pre {
       padding: 1em 0;
       & > span {
