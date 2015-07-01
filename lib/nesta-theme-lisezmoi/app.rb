@@ -23,7 +23,7 @@ module Nesta
       end
 
       def inline_anchored_path(item)
-        if item.parent
+        if item.parent && !item.parent.index_page?
           STDOUT.puts("Item: #{item.inspect} \n\n\nParent: #{item.parent.inspect}")
           link_parts = []
           link_parts << inline_anchored_path(item.parent)
