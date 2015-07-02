@@ -283,6 +283,26 @@ mark, blockquote {
     font-size: 85%;
     font-style: italic;
   }
+
+  ul.toc {
+    list-style: none;
+    padding-left: 0;
+    font-size: 90%;
+
+    li {
+      margin: 0;
+    }
+
+    ul {
+      list-style: none;
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 90%;
+      padding-left: 1em;
+    }
+  }
+}
+
 }
 
 figure.intro {
