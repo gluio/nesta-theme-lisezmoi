@@ -4,9 +4,9 @@
 $base-font-size: 22px;
 $base-color: rgba(0, 0, 0, 0.8);
 $background-color: #fff;
-$heading-font-family: myriad-pro, sans-serif;
-$body-font-family: myriad-pro, sans-serif;
-$code-font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+$heading-font-family: 'Myriad', MyriadPro, 'Myriad Pro', myriad-pro, 'PT Sans', Lucida Sans, Segoe UI, Calibri, sans-serif;
+$body-font-family: $heading-font-family;
+$code-font-family: Consolas, 'Liberation Mono', Menlo, monaco, 'Inconsolata', 'Ubuntu Mono', Courier, monospace;
 $link-color: rgb(77, 204, 75);
 $header-height: 65px;
 
