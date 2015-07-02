@@ -74,6 +74,18 @@ a {
   }
 }
 
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: none;
+  th, td {
+    padding: 0.25rem 0.5rem;
+  }
+  tr:nth-child(even) {
+    background-color: #efefef;
+  }
+}
+
 .container {
   @include outer-container;
   margin-bottom: 3rem;
