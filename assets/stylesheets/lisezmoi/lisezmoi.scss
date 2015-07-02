@@ -3,15 +3,18 @@
 
 $base-font-size: 22px;
 $base-color: rgba(0, 0, 0, 0.8);
+$background-color: #fff;
 $heading-font-family: myriad-pro, sans-serif;
 $body-font-family: myriad-pro, sans-serif;
 $code-font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
 $link-color: rgb(77, 204, 75);
+$header-height: 65px;
 
 body {
   font-family: $body-font-family;
   font-size: $base-font-size;
   color: $base-color;
+  background: $background-color;
   margin: 0;
 }
 
@@ -76,14 +79,18 @@ a {
 }
 
 section.header {
-  height: 65px;
+  height: $header-height;
   padding-left: 15px;
+  position: fixed;
+  top: 0;
+  background: $background-color;
+  width: 100%;
   h1 {
     padding: 0;
     margin: 0;
     text-align: left;
     font-size: 25px;
-    line-height: 65px;
+    line-height: $header-height;
   }
   a {
     color: $base-color;
@@ -122,6 +129,7 @@ mark, blockquote {
 
 #menu {
   position: fixed;
+  top: $header-height;
   @include span-columns(3);
   font-size: 16px;
   letter-spacing: -0.15px;
@@ -174,6 +182,7 @@ mark, blockquote {
   @include shift(3);
   padding-right: 2rem;
   background: #ffffff;
+  margin-top: $header-height;
 
   h1, h2, h3, h4 {
     text-align: left;
