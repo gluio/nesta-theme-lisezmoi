@@ -36,13 +36,13 @@ p, ul li, ol li {
 }
 
 ul li, ol li {
-  margin: 0.5em 0;
+  margin: 0.5rem 0;
 }
 
 code {
   font-size: 85%;
   background: rgba(0, 0, 0, 0.04);
-  padding: 0 0.2em;
+  padding: 0 0.2rem;
   border-radius: 3px;
 }
 
@@ -62,7 +62,7 @@ a {
 
 .container {
   @include outer-container;
-  margin-bottom: 3em;
+  margin-bottom: 3rem;
 }
 
 .articles {
@@ -143,7 +143,7 @@ mark, blockquote {
     ul {
       list-style: none;
       padding-left: 0;
-      margin-bottom: 1em;
+      margin-bottom: 1rem;
 
       li {
         margin: 0;
@@ -172,7 +172,7 @@ mark, blockquote {
 #content {
   @include span-columns(9);
   @include shift(3);
-  padding-right: 2em;
+  padding-right: 2rem;
   background: #ffffff;
 
   h1, h2, h3, h4 {
@@ -184,7 +184,7 @@ mark, blockquote {
   }
 
   ul, ol {
-    margin: 1em 0;
+    margin: 1rem 0;
   }
 
   img {
@@ -208,21 +208,21 @@ mark, blockquote {
     }
     h1, h2, h3, h4 {
       text-align: left;
-      margin: 0.2em 0;
+      margin: 0.2rem 0;
     }
     p {
-      margin-top: 0.2em;
+      margin-top: 0.2rem;
       margin-bottom: 0;
       font-size: 67%;
-      line-height: 1.7em;
+      line-height: 1.7rem;
     }
     footer {
-      margin: 0 0 3em;
+      margin: 0 0 3rem;
       font-size: 60%;
       line-height: 1.6em;
       color: rgba(120, 120, 120, 0.8);
       .meta {
-        margin-top: 1em;
+        margin-top: 1rem;
       }
       .more {
         display: block;
@@ -233,7 +233,7 @@ mark, blockquote {
       }
       .author {
         float: left;
-        margin-right: 0.25em;
+        margin-right: 0.25rem;
         font-style: normal;
         font-size: 100%;
         margin-top: 0;
@@ -245,7 +245,7 @@ mark, blockquote {
     }
   }
   div.author {
-    margin-top: 2em;
+    margin-top: 2rem;
     color: rgba(120, 120, 120, 0.8);
     font-size: 85%;
     font-style: italic;
@@ -339,7 +339,7 @@ blockquote {
   font-weight: 400;
   font-style: italic;
   font-family: $body-font-family;
-  margin: 1.5em 0 1em;
+  margin: 1.5rem 0 1rem;
 
   &::before {
     display: block;
@@ -361,7 +361,7 @@ blockquote {
   em:last-of-type {
     display: block;
     float: right;
-    margin: 1em 0;
+    margin: 1rem 0;
 
     &::after {
       display: block;
@@ -386,19 +386,19 @@ blockquote {
       margin-top: 0;
       margin-bottom: 0;
       font-size: 90%;
-      padding-left: 1em;
+      padding-left: 1rem;
     }
   }
 }
 
 section.technical-docs {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  margin-bottom: 3em;
+  margin-bottom: 3rem;
 }
 
 @mixin callout($color) {
-  padding: 1em;
-  margin: 1em;
+  padding: 1rem;
+  margin: 1rem;
   color: $color;
   background: lighten($color, 60%);
   p {
@@ -449,13 +449,13 @@ $code-background: #fcfcfc;
     border-right: 1px solid darken($code-background, 10%);
     width: 50px;
     pre {
-      padding: 1em 0;
+      padding: 1rem 0;
       a {
         color: darken($code-background, 20%);
         text-decoration: none;
         width: 100%;
         display: inline-block;
-        padding: 0 0.5em;
+        padding: 0 0.5rem;
         &.highlight {
           background: #f7f7c6;
         }
@@ -466,11 +466,11 @@ $code-background: #fcfcfc;
     padding: 0;
     width: 100%;
     pre {
-      padding: 1em 0;
+      padding: 1rem 0;
       & > span {
         display: block;
         width: 100%;
-        padding: 0 0.5em;
+        padding: 0 0.5rem;
         &.highlight {
           background: #f7f7c6;
         }
