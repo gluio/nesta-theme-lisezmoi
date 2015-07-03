@@ -145,7 +145,7 @@ mark, blockquote {
 
 #menu {
   position: fixed;
-  top: $header-height;
+  top: $header-height + $base-spacing;
   @include span-columns(3);
   font-size: 16px;
   letter-spacing: -0.15px;
@@ -199,7 +199,7 @@ mark, blockquote {
   @include shift(3);
   padding-right: 2rem;
   background: #ffffff;
-  margin-top: $header-height;
+  margin-top: $header-height + $base-spacing;
 
   h1, h2, h3, h4 {
     text-align: left;
