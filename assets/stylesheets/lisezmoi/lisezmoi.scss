@@ -1,17 +1,18 @@
-@import "bourbon";
-@import "neat";
+@import "bourbon/bourbon";
+@import "neat/neat";
 
-$base-font-size: 22px;
-$base-color: rgba(0, 0, 0, 0.8);
-$background-color: #fff;
-$heading-font-family: 'Myriad', MyriadPro, 'Myriad Pro', myriad-pro, 'PT Sans', Lucida Sans, Segoe UI, Calibri, sans-serif;
-$body-font-family: $heading-font-family;
-$code-font-family: Consolas, 'Liberation Mono', Menlo, monaco, 'Inconsolata', 'Ubuntu Mono', Courier, monospace;
-$link-color: rgb(77, 204, 75);
-$header-height: 65px;
+@import "variables";
+$base-font-size: 22px !default;
+$base-color: rgba(0, 0, 0, 0.8) !default;
+$background-color: #fff !default;
+$heading-font-family: 'Myriad', MyriadPro, 'Myriad Pro', myriad-pro, 'PT Sans', Lucida Sans, Segoe UI, Calibri, sans-serif !default;
+$base-font-family: $heading-font-family !default;
+$code-font-family: Consolas, 'Liberation Mono', Menlo, monaco, 'Inconsolata', 'Ubuntu Mono', Courier, monospace !default;
+$link-color: rgb(77, 204, 75) !default;
+$header-height: 65px !default;
 
 body {
-  font-family: $body-font-family;
+  font-family: $base-font-family;
   font-size: $base-font-size;
   color: $base-color;
   background: $background-color;
@@ -389,7 +390,7 @@ blockquote {
   position: relative;
   font-weight: 400;
   font-style: italic;
-  font-family: $body-font-family;
+  font-family: $base-font-family;
   margin: 1.5rem 0 1rem;
 
   &::before {
@@ -406,7 +407,7 @@ blockquote {
     margin-bottom: 0;
     font-weight: 400;
     font-style: italic;
-    font-family: $body-font-family;
+    font-family: $base-font-family;
   }
 
   em:last-of-type {
