@@ -489,11 +489,13 @@ $code-background: #fcfcfc;
   display: block;
 
   td.linenos, td.gutter {
-    padding: 0;
+    padding: 0 0.5rem;
     border-right: 1px solid darken($code-background, 10%);
     width: 50px;
+    display: inline-block;
     pre {
       padding: 1rem 0;
+      width: 100%;
       a {
         color: darken($code-background, 20%);
         text-decoration: none;
