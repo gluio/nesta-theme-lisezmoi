@@ -97,7 +97,7 @@ table {
       display: none;
     }
     #content {
-      @include span-columns(12);
+      @include span-columns(4);
     }
   }
   @include media($medium-screen) {
