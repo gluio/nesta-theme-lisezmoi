@@ -465,7 +465,10 @@ section.technical-docs {
   padding: 1rem;
   margin: 1rem;
   color: $color;
-  background: lighten($color, 60%);
+  background: lighten($color, 57%);
+  border: 1px solid transparentize($color, 0.5);
+  border-radius: 5px;
+
   p {
     margin: 0;
     font-style: normal;
@@ -480,39 +483,39 @@ section.technical-docs {
     }
   }
   &:hover {
-    background: lighten($color, 60%);
+    background: lighten($color, 57%);
   }
   &::before {
     font-family: 'fontello';
     font-size: $base-font-size;
     font-style: normal;
     left: $base-spacing/2;
-    top: 1rem;
+    top: 1.2rem;
   }
 }
 .notice {
   &::before {
     content: '\e800';
   }
-  @include callout(#244e87);
+  @include callout(#008fc6);
 }
 .alert {
   &::before {
     content: '\e801';
   }
-  @include callout(#8c7800);
+  @include callout(#f89900);
 }
 .error {
   &::before {
     content: '\e803';
   }
-  @include callout(#96151b);
+  @include callout(#f80800);
 }
 .success {
   &::before {
     content: '\e802';
   }
-  @include callout(#56651a);
+  @include callout(#97dd00);
 }
 
 $code-background: #fcfcfc;
