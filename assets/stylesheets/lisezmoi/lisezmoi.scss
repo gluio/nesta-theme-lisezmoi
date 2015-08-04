@@ -470,6 +470,7 @@ section.technical-docs {
     margin: 0;
     font-style: normal;
     font-family: $base-font-family;
+    padding-left: $base-spacing * 2;
   }
   a {
     color: $color;
@@ -478,24 +479,39 @@ section.technical-docs {
       color: lighten($color, 20%);
     }
   }
-  &::before {
-    display: none;
-    content: "";
-  }
   &:hover {
     background: lighten($color, 60%);
   }
+  &::before {
+    font-family: 'fontello';
+    font-size: $base-font-size;
+    font-style: normal;
+    left: $base-spacing/2;
+    top: 1rem;
+  }
 }
 .notice {
+  &::before {
+    content: '\e800';
+  }
   @include callout(#244e87);
 }
 .alert {
+  &::before {
+    content: '\e801';
+  }
   @include callout(#8c7800);
 }
 .error {
+  &::before {
+    content: '\e803';
+  }
   @include callout(#96151b);
 }
 .success {
+  &::before {
+    content: '\e802';
+  }
   @include callout(#56651a);
 }
 
