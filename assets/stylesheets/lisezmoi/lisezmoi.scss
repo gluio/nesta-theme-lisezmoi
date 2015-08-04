@@ -184,6 +184,9 @@ mark, blockquote {
       margin: 0;
       padding: 0;
       white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+
       &.current {
         a {
           color: $link-color;
