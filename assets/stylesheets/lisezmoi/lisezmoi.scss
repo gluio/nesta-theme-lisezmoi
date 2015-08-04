@@ -82,7 +82,8 @@ table {
 .container {
   @include outer-container;
   margin-bottom: $base-spacing * 2;
-  margin-top: $nav-header-height + $base-spacing;
+  margin-top: $nav-header-height;
+  padding-top: $base-spacing;
   #menu {
     @include span-columns(3);
   }
