@@ -1,8 +1,7 @@
+@import "variables";
 @import "bourbon/bourbon";
 @import "neat/neat";
 @import "contentfocus/icons";
-
-@import "variables";
 
 body {
   font-family: $base-font-family;
@@ -83,7 +82,7 @@ table {
 .container {
   @include outer-container;
   margin-bottom: $base-spacing * 2;
-  margin-top: $header-height + $base-spacing;
+  margin-top: $nav-header-height + $base-spacing;
 }
 
 .articles {
@@ -97,7 +96,7 @@ table {
 }
 
 section.header {
-  height: $header-height;
+  height: $nav-header-height;
   padding-left: 15px;
   position: fixed;
   top: 0;
@@ -108,7 +107,7 @@ section.header {
     margin: 0;
     text-align: left;
     font-size: 25px;
-    line-height: $header-height;
+    line-height: $nav-header-height;
   }
   a {
     color: $base-color;
@@ -146,7 +145,7 @@ mark, blockquote {
 }
 
 #menu {
-  top: $header-height + $base-spacing;
+  top: $nav-header-height + $base-spacing;
   @include span-columns(3);
   font-size: 16px;
   letter-spacing: -0.15px;
