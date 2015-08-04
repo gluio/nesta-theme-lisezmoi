@@ -1,6 +1,6 @@
 - if @page.intro_image
   %figure.intro
-    %h1= @page.heading
+    %h1= heading_or_site_title
     %img(src="#{@page.intro_image}")
 #content
   ~ @page.to_html(self)
@@ -11,7 +11,7 @@
 
   - if !@page.articles.empty?
     %section.articles
-      %h2= "Articles on #{@page.heading}"
+      %h2= "Articles on #{@page.heading_or_site_title}"
       = haml :summaries, :layout => false, :locals => { :pages => @page.articles, :heading => :h3 }
   = haml :feedback, :layout => false
 = haml :footer, layout: false
