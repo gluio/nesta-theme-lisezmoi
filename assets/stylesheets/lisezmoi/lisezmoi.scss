@@ -81,7 +81,8 @@ table {
 
 .container {
   @include outer-container;
-  margin-bottom: 3rem;
+  margin-bottom: $base-spacing * 2;
+  margin-top: $header-height + $base-spacing;
 }
 
 .articles {
@@ -144,7 +145,6 @@ mark, blockquote {
 }
 
 #menu {
-  position: fixed;
   top: $header-height + $base-spacing;
   @include span-columns(3);
   font-size: 16px;
@@ -196,11 +196,9 @@ mark, blockquote {
 }
 #content {
   @include span-columns(9);
-  @include shift(3);
-  padding-right: 2rem;
-  padding-left: 2rem;
+  padding-right: $base-spacing;
+  padding-left: $base-spacing;
   background: #ffffff;
-  margin-top: $header-height + $base-spacing;
   border-left: 1px solid rgba(0, 0, 0, 0.1);
 
   h1, h2, h3, h4 {
