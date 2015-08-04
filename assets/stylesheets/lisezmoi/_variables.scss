@@ -25,6 +25,10 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0 !default;
 $nav-header-height: 65px !default;
 
+// Background colors
+$base-background-color: #fafafa;
+$secondary-background-color: tint($base-background-color, 75%);
+
 // Colors
 $base-color: rgba(0, 0, 0, 0.8) !default;
 $success-color: #c1fca9 !default;
@@ -45,10 +49,6 @@ $link-color: rgb(77, 204, 75) !default;
 $base-border-radius: 5px;
 $base-border-color: lighten($base-font-color, 75%);
 $base-border: 1px solid $base-border-color;
-
-// Background colors
-$base-background-color: #fafafa;
-$secondary-background-color: tint($base-background-color, 75%);
 
 // Containers
 $max-width: 100%;
