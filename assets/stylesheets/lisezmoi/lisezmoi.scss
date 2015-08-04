@@ -95,6 +95,9 @@ table {
     @include outer-container($mobile-width);
     #menu {
       display: none;
+      ul.menu ul {
+        display: none;
+      }
     }
     #content {
       @include span-columns(4);
@@ -105,6 +108,11 @@ table {
   }
   @include media($tablet) {
     @include outer-container($tablet-width);
+    #menu {
+      ul.menu ul {
+        display: none;
+      }
+    }
   }
   @include media($large-screen) {
     @include outer-container($large-screen-width);
