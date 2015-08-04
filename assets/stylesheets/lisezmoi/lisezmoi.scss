@@ -83,12 +83,21 @@ table {
   @include outer-container;
   margin-bottom: $base-spacing * 2;
   margin-top: $nav-header-height + $base-spacing;
+  #menu {
+    @include span-columns(3);
+  }
+  #content {
+    @include span-columns(9);
+  }
 
   @include media($mobile) {
     @include outer-container($mobile-width);
-    padding-top: 1em;
-    padding-left: 22px;
-    padding-right: 22px;
+    #menu {
+      display: none;
+    }
+    #content {
+      @include span-columns(12);
+    }
   }
   @include media($medium-screen) {
     @include outer-container($medium-screen-width);
@@ -162,7 +171,6 @@ mark, blockquote {
 
 #menu {
   top: $nav-header-height + $base-spacing;
-  @include span-columns(3);
   font-size: 16px;
   letter-spacing: -0.15px;
 
@@ -211,7 +219,6 @@ mark, blockquote {
   }
 }
 #content {
-  @include span-columns(9);
   padding-right: $base-spacing;
   padding-left: $base-spacing;
   background: #ffffff;
