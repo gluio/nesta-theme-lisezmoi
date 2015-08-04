@@ -468,6 +468,8 @@ section.technical-docs {
   background: lighten($color, 60%);
   p {
     margin: 0;
+    font-style: normal;
+    font-family: $base-font-family;
   }
   a {
     color: $color;
@@ -475,6 +477,13 @@ section.technical-docs {
     &:hover {
       color: lighten($color, 20%);
     }
+  }
+  &::before {
+    display: none;
+    content: "";
+  }
+  &:hover {
+    background: lighten($color, 60%);
   }
 }
 .notice {
