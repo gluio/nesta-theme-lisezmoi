@@ -9,10 +9,12 @@ $code-font-family: Consolas, 'Liberation Mono', Menlo, monaco, 'Inconsolata', 'U
 // Font sizes
 $base-font-size: 22px !default;
 $heading-font-size: $base-font-size * 1.64 !default;
+$code-font-size: 16px !default;
 
 // Line height
 $base-line-height: $base-font-size * 1.5;
 $heading-line-height: $heading-font-size * 1.15;
+$code-line-height: $code-font-size * 1.5;
 
 // Other typesetting hints
 $heading-letter-spacing: -2px*(23/32);
@@ -33,6 +35,7 @@ $base-accent-color: #262626 !default;
 $action-color: #5cd02e !default;
 $base-button-color: $action-color !default;
 $hover-button-color: lighten($base-button-color, 10%);
+$code-background: #fcfcfc !default;
 
 // Font colors
 $base-font-color: rgba(0, 0, 0, 0.8) !default;
