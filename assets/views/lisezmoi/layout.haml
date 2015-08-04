@@ -8,6 +8,8 @@
     = haml :fonts, layout: false
     = haml :default_head, layout: false
   %body
+    = haml :header, layout: false
+    = haml :menu, layout: false
     .container
       = yield
     = haml :footer_scripts, layout: false

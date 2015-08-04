@@ -83,6 +83,22 @@ table {
   @include outer-container;
   margin-bottom: $base-spacing * 2;
   margin-top: $nav-header-height + $base-spacing;
+
+  @include media($mobile) {
+    @include outer-container($mobile-width);
+    padding-top: 1em;
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+  @include media($medium-screen) {
+    @include outer-container($medium-screen-width);
+  }
+  @include media($tablet) {
+    @include outer-container($tablet-width);
+  }
+  @include media($large-screen) {
+    @include outer-container($large-screen-width);
+  }
 }
 
 .articles {
@@ -200,23 +216,6 @@ mark, blockquote {
   padding-left: $base-spacing;
   background: #ffffff;
   border-left: 1px solid rgba(0, 0, 0, 0.1);
-
-  @include media($mobile) {
-    @include outer-container($mobile-width);
-    padding-top: 1em;
-    padding-left: 22px;
-    padding-right: 22px;
-  }
-  @include media($medium-screen) {
-    @include outer-container($medium-screen-width);
-  }
-  @include media($tablet) {
-    @include outer-container($tablet-width);
-  }
-  @include media($large-screen) {
-    @include outer-container($large-screen-width);
-  }
-
 
   h1, h2, h3, h4 {
     text-align: left;
