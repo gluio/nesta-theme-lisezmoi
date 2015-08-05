@@ -527,6 +527,17 @@ section.technical-docs {
     top: 1.2rem;
   }
 }
+
+section#feedback {
+  &::before {
+    content: '\e804';
+  }
+  @include callout($base-color);
+  h1 {
+    padding-left: $base-spacing * 2;
+  }
+}
+
 .notice {
   &::before {
     content: '\e800';
