@@ -39,7 +39,7 @@ $base-accent-color: #262626 !default;
 $action-color: #5cd02e !default;
 $base-button-color: $action-color !default;
 $hover-button-color: lighten($base-button-color, 10%);
-$code-background: darken($base-background-color, 20%) !default;
+$code-background: darken($base-background-color, 3%) !default;
 
 // Font colors
 $base-font-color: rgba(0, 0, 0, 0.8) !default;
