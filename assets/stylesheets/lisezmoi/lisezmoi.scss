@@ -532,9 +532,11 @@ section#feedback {
   &::before {
     content: '\e804';
   }
-  @include callout($base-color);
+  @include callout(lighten($base-color, 10%));
+
   h1 {
-    padding-left: $base-spacing * 2;
+    padding-left: $base-spacing;
+    display: inline-block;
   }
 }
 
