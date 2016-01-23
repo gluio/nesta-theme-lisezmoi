@@ -1,6 +1,7 @@
 require "nesta-contentfocus-extensions"
 require "nesta-theme-lisezmoi/version"
 require "nesta-theme-lisezmoi/app"
+require "nesta-theme-lisezmoi/page"
 
 module Nesta
   module Theme

@@ -1,0 +1,43 @@
+.container {
+  body.tour & {
+    #content {
+      @include clearfix;
+      @include span-columns(12);
+      border: none;
+    }
+
+    ol.tour-nav {
+      @include clearfix;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        background: lighten($action-color, 20%);
+        border-radius: $base-border-radius;
+        padding: $base-spacing/4 $base-spacing/2;
+        color: #fff;
+        transition: all $base-timing $base-duration;
+        min-width: 7em;
+        text-align: center;
+        &:hover {
+          background: $action-color;
+          color: darken($action-color, 30%);
+          a {
+            color: darken($action-color, 30%);
+          }
+        }
+        a {
+          transition: all $base-timing $base-duration;
+          color: inherit;
+          color: #fff;
+        }
+      }
+      li.previous {
+        float: left;
+      }
+      li.next {
+        float: right;
+      }
+    }
+  }
+}

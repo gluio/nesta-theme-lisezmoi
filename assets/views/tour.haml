@@ -1,0 +1,14 @@
+!!!html
+%html(lang="en")
+  %head
+    %meta(charset="utf-8")
+    %title= @title
+    %link(rel="stylesheet" type="text/css" href="#{path_to("css/lisezmoi/lisezmoi.css")}")
+    %script{ :type => "text/javascript", :src => "/assets/lisezmoi.js" }
+    = haml :fonts, layout: false
+    = haml :default_head, layout: false
+  %body.tour
+    = haml :header, layout: false
+    .container
+      = yield
+    = haml :footer_scripts, layout: false

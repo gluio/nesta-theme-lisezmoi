@@ -3,8 +3,10 @@
     %h1= heading_or_site_title
     %img(src="#{@page.intro_image}")
 #content
-  ~ @page.to_html(self)
-  - unless @page.metadata('layout') == 'options'
+  - if %(options tour).include? @page.metadata('layout')
+    ~ @page.to_html(self)
+  - else
+    ~ @page.to_html(self)
     - if @page.metadata('author')
       .author
         = author_biography
@@ -15,4 +17,12 @@
         %h2= "Articles on #{@page.heading_or_site_title}"
         = haml :summaries, :layout => false, :locals => { :pages => @page.articles, :heading => :h3 }
     = haml :feedback, :layout => false
+  - if @page.metadata('layout') == 'tour'
+    %ol.tour-nav
+      - if @page.previous_page
+        %li.previous
+          %a{href: @page.previous_page.permalink}= @page.previous_page.link_text
+      - if @page.next_page
+        %li.next
+          %a{href: @page.next_page.permalink}= @page.next_page.link_text
 = haml :footer, layout: false
