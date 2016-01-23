@@ -4,14 +4,15 @@
     %img(src="#{@page.intro_image}")
 #content
   ~ @page.to_html(self)
-  - if @page.metadata('author')
-    .author
-      = author_biography
-  = haml :summaries, :layout => false, :locals => { :pages => @page.pages, :heading => :h3 }
+  - unless @page.metadata('layout') == 'options'
+    - if @page.metadata('author')
+      .author
+        = author_biography
+    = haml :summaries, :layout => false, :locals => { :pages => @page.pages, :heading => :h3 }
 
-  - if !@page.articles.empty?
-    %section.articles
-      %h2= "Articles on #{@page.heading_or_site_title}"
-      = haml :summaries, :layout => false, :locals => { :pages => @page.articles, :heading => :h3 }
-  = haml :feedback, :layout => false
+    - if !@page.articles.empty?
+      %section.articles
+        %h2= "Articles on #{@page.heading_or_site_title}"
+        = haml :summaries, :layout => false, :locals => { :pages => @page.articles, :heading => :h3 }
+    = haml :feedback, :layout => false
 = haml :footer, layout: false

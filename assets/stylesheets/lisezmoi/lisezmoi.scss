@@ -2,6 +2,7 @@
 @import "neat/neat";
 @import "contentfocus/icons";
 @import "variables";
+@import "options";
 
 body {
   font-family: $base-font-family;
@@ -117,18 +118,6 @@ table {
   }
   @include media($large-screen) {
     @include outer-container($large-screen-width);
-  }
-  body.options & {
-    #menu {
-      display: none;
-    }
-    #content {
-      @include span-columns(12);
-      border: none;
-    }
-    #feedback {
-      display: none;
-    }
   }
 }
 

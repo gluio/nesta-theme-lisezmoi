@@ -1,0 +1,30 @@
+.container {
+  body.options & {
+    #content {
+      @include clearfix;
+      @include span-columns(12);
+      border: none;
+      ul, ol {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+
+        li {
+          @include span-columns(6);
+          border: $base-border;
+          border-radius: $base-border-radius;
+          background: $secondary-background-color;
+          text-align: center;
+          transition: background $base-duration $base-timing;
+          &:nth-child(2) {
+            margin-right: 0;
+          }
+          &:hover {
+            background: tint($action-color, 80%);
+          }
+        }
+      }
+    }
+  }
+}
