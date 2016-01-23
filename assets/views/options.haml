@@ -7,9 +7,8 @@
     %script{ :type => "text/javascript", :src => "/assets/lisezmoi.js" }
     = haml :fonts, layout: false
     = haml :default_head, layout: false
-  %body
+  %body.options
     = haml :header, layout: false
     .container
-      = haml :menu, layout: false
       = yield
     = haml :footer_scripts, layout: false
