@@ -21,8 +21,8 @@
     %ol.tour-nav
       - if @page.previous_page
         %li.previous
-          %a{href: @page.previous_page.permalink}= @page.previous_page.link_text
+          %a{href: path_to(@page.previous_page.path)}= @page.previous_page.link_text
       - if @page.next_page
         %li.next
-          %a{href: @page.next_page.permalink}= @page.next_page.link_text
+          %a{href: path_to(@page.next_page.path)}= @page.next_page.link_text
 = haml :footer, layout: false

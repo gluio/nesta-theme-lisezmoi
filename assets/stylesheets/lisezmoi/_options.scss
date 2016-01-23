@@ -4,6 +4,10 @@
       @include clearfix;
       @include span-columns(12);
       border: none;
+
+      h1:first-child {
+        text-align: center;
+      }
       ul, ol {
         list-style: none;
         margin: 0;
