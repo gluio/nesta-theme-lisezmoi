@@ -3,7 +3,7 @@
     %h1= heading_or_site_title
     %img(src="#{@page.intro_image}")
 #content
-  - if %(options tour).include? @page.metadata('layout')
+  - if @page.metadata('layout') && %(options tour).include?(@page.metadata('layout'))
     ~ @page.to_html(self)
   - else
     ~ @page.to_html(self)

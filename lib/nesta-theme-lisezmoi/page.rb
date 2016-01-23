@@ -1,6 +1,7 @@
 module Nesta
   class Page < FileModel
     def previous_page
+      return nil if tour_position == 1
       tour_pages[tour_position - 1]
     end
 
