@@ -35,7 +35,7 @@ module Nesta
       end
 
       def link_text_to_inline_anchor(text)
-        text.gsub(/[^a-z0-9]+/i,"-").downcase
+        text.gsub(/[^a-z0-9]+/i,'-').downcase
       end
     end
   end

@@ -2,8 +2,6 @@
 @import "neat/neat";
 @import "contentfocus/icons";
 @import "variables";
-@import "options";
-@import "tour";
 
 body {
   font-family: $base-font-family;
@@ -186,6 +184,7 @@ mark, blockquote {
   top: $nav-header-height + $base-spacing;
   font-size: 16px;
   letter-spacing: -0.15px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
 
   ul.menu {
     padding: 0;
@@ -237,7 +236,6 @@ mark, blockquote {
 #content {
   padding-right: $base-spacing;
   padding-left: $base-spacing;
-  border-left: 1px solid rgba(0, 0, 0, 0.1);
 
   h1, h2, h3, h4 {
     text-align: left;
@@ -701,3 +699,6 @@ section#feedback {
   color: darken($code-background, 20%);
   text-align: right;
 }
+
+@import "options";
+@import "tour";
