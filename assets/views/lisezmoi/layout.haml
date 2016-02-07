@@ -5,12 +5,6 @@
     %title= @title
     %link(rel="stylesheet" type="text/css" href="#{path_to("css/lisezmoi/lisezmoi.css")}")
     %script{ :type => "text/javascript", :src => "/assets/lisezmoi.js" }
-    - STDOUT.puts session[:person_id].inspect
-    - STDOUT.puts session.inspect
-    - if ENV['SEGMENT_WRITE_KEY'] && session[:person_id]
-      :javascript
-        analytics.identify('#{session[:person_id]}');
-        analytics.page(document.title, {}, { 'Keen IO': true });
     = haml :fonts, layout: false
     = haml :default_head, layout: false
   %body
