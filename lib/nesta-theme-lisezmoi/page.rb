@@ -15,7 +15,7 @@ module Nesta
     end
 
     def tour_pages
-      @tour_pages ||= tour_category.pages
+      @tour_pages ||= tour_category.pages || []
     end
 
     def tour_length
@@ -29,5 +29,6 @@ module Nesta
     def start_page?
       pages.size > 0
     end
+
   end
 end
